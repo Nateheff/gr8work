@@ -1,0 +1,101 @@
+.stats-head {
+  text-align: center;
+  font-family: inherit;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-size: 50px;
+}
+
+.macros-head {
+  text-align: center;
+  font-family: inherit;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.none {
+  display: inline;
+  text-align: center;
+  font-size: 30px;
+}
+
+.body {
+  text-align: center;
+}
+
+.basic {
+  //   display: inline-block;
+  text-align: center;
+  list-style-position: inside;
+  margin-bottom: 15px;
+  &-item {
+    display: inline-block;
+    font-size: medium;
+    margin-right: 10px;
+  }
+}
+
+.stats-body {
+  display: inline;
+}
+
+.stat {
+  display: inline-block;
+
+  align-items: center;
+
+  &-value {
+    font-size: 50px;
+    margin-right: 5px;
+  }
+
+  &-unit {
+    font-size: 45px;
+    margin-right: 50px;
+  }
+
+  &-name {
+    display: block;
+    text-align: center;
+  }
+}
+
+.add-stats {
+  margin-top: 40px;
+
+  display: inline-block;
+  text-align: center;
+  padding: 8px;
+  font-family: inherit;
+  background-color: dimgray;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  left: 48%;
+  transition: transform 0.3s;
+  font-weight: 600;
+}
+
+.add-stats:hover {
+  transform: scale(1.05);
+}
+
+.macros {
+  text-align: center;
+}
+
+.edit-stats {
+  margin-top: 40px;
+
+  display: inline-block;
+  text-align: center;
+  padding: 8px;
+  font-family: inherit;
+  background-color: dimgray;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  left: 47%;
+  transition: transform 0.3s;
+  font-weight: 600;
+}

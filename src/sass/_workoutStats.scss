@@ -1,0 +1,212 @@
+.exercises-head {
+  text-align: center;
+  font-family: inherit;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.empty {
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.results {
+  position: relative;
+  margin-top: 25px;
+}
+
+.exercises {
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  display: inline-block;
+  text-align: left;
+  // align-items: center;
+  list-style: none;
+
+  // height: 77vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.exercises::-webkit-scrollbar {
+  width: 0;
+}
+
+.exercise {
+  background-image: url(../img/exercise-bg.png);
+  border-radius: 10px;
+
+  padding: 1.5rem 2.25rem;
+  width: 800px;
+  box-shadow: 1px 1px 3px;
+
+  margin: 1.75rem;
+
+  //   cursor: pointer;
+
+  // display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+  white-space: normal;
+  z-index: 1;
+  transition: box-shadow 0.3s;
+}
+
+.exercise:hover {
+  box-shadow: 1px 1px 10px;
+}
+
+.workout__title {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  grid-column: 1 / -1;
+}
+
+.workout__details {
+  display: inline-block;
+  position: absolute;
+}
+
+.workout__detail {
+  display: inline-block;
+  align-items: baseline;
+  margin-right: 10px;
+}
+
+.workout__icon {
+  font-size: 1.8rem;
+  margin-right: 0.2rem;
+  height: 0.28rem;
+}
+
+.workout__icons {
+  font-size: 1.8rem;
+  margin-right: 0.2rem;
+  height: 0.28rem;
+}
+
+.workout__value {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.workout__difficulty {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.workout__unit {
+  font-size: 1.1rem;
+  color: var(--color-light--1);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.a {
+  display: inline-block;
+  grid-row: 1;
+}
+
+.add {
+  border: none;
+  background: none;
+  width: min-content;
+  position: absolute;
+  left: 750px;
+  cursor: pointer;
+
+  scale: 1.4;
+}
+
+.minus {
+  border: none;
+  background: none;
+  width: min-content;
+  position: absolute;
+  left: 720px;
+  cursor: pointer;
+
+  scale: 1.4;
+}
+
+.pagination {
+  display: inline-block;
+  width: max-content;
+}
+
+.btn__next {
+  float: right;
+  margin-left: 800px;
+}
+
+.btn__back {
+  float: left;
+  margin-left: 25px;
+}
+
+.instructions {
+  position: relative;
+
+  display: inline-block;
+  margin-left: 1.5rem;
+  width: 25rem;
+
+  &-label {
+    position: initial;
+    font-size: small;
+    font-weight: 500;
+  }
+
+  &-content {
+    display: none;
+    position: absolute;
+    left: 19rem;
+    right: 5%;
+    background-color: rgb(244, 244, 244);
+    padding: 0.5rem;
+
+    width: 250px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    // width: 150px;
+    // inline-size: 150px;
+    height: 55px;
+    // overflow-wrap: break-word;
+  }
+
+  &:hover &-content {
+    display: inline-block;
+  }
+}
+
+.input__field {
+  display: inline;
+  width: 25px;
+  border: none;
+}
+
+.submit {
+  display: inline;
+  position: initial;
+}
+
+.sub {
+  border: none;
+  display: inline;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  font-size: small;
+  font-weight: 700;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  background-image: $gradient;
+  cursor: pointer;
+}
