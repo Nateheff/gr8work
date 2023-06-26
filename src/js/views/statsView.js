@@ -9,7 +9,7 @@ class StatsView extends View {
         e.preventDefault();
         const weight = document.querySelector('.input-weight').value;
         const height = document.querySelector('.input-height').value;
-        const sex = document.querySelector('.input-sex').value;
+        const sex = document.querySelector('.input-sex').value.toLowerCase();
         const age = document.querySelector('.input-age').value;
         const activity = document.querySelector('.input-activity').value;
 
@@ -62,7 +62,7 @@ class StatsView extends View {
             <span class="stat-name">(BMI)</span>
         </li>
         <li class="stat">
-            <span class="stat-value">${stats.dailyCalories}</span>
+            <span class="stat-value">${Math.trunc(stats.dailyCalories)}</span>
             <span class="stat-unit">Calories</span>
             <span class="stat-name">(Daily Calorie Requirements)</span>
         </li>
